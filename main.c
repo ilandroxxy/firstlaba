@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main()
 {
-	ptintf("Hello, it is FirstLaba");
+	printf("Hello, it is FirstLaba\n");
 	return 0;
 }
