@@ -1,19 +1,19 @@
 all: hello
 	
-hello:main.o function1.o function2.o hello.0
-	gcc main.o function1.o function2.o hello.o -o hello
+hello: main.o function1.o function2.o hello.o
+	g++ main.o function1.o function2.o hello.o -o hello
 
-main.o: main.c
-	gcc -c main.c
+main.o: main.cpp
+	g++ -cpp main.cpp
 
-function1.o: function1.c
-	gcc -c function1.c
+function1.o: function1.cpp
+	g++ -cpp function1.cpp
 
-function2.o: function2.c
-	gcc -c function2.c
+function2.o: function2.cpp
+	g++ -cpp function2.cpp
 
-hello.o: hello.c
-	gcc -c hello.c
+hello.o: hello.cpp
+	g++ -cpp hello.cpp
 
 clean:
 	rm -rf *.o hello
