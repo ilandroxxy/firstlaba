@@ -1,7 +1,7 @@
 all: hello
 	
-hello: main.o function1.o function2.o hello.o
-	g++ main.o function1.o function2.o hello.o -o hello
+hello: main.o function1.o function2.o main.o
+	g++ main.o function1.o function2.o hello.o -o main
 
 main.o: main.cpp
 	g++ -cpp main.cpp
@@ -12,8 +12,8 @@ function1.o: function1.cpp
 function2.o: function2.cpp
 	g++ -cpp function2.cpp
 
-hello.o: hello.cpp
-	g++ -cpp hello.cpp
+hello.o: main.cpp
+	g++ -cpp main.cpp
 
 clean:
-	rm -rf *.o hello
+	rm -rf *.o main
