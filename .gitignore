@@ -1,5 +1,6 @@
 
-*.txt
+test.txt
+test2.txt
 /images
 .clang-format
 Makefile-1.save
