@@ -1,3 +1,7 @@
 
 *.txt
+/images
+.clang-format
+Makefile-1.save
 main.o
+
