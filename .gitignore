@@ -1,9 +1,8 @@
 
-test.txt
-test2.txt
+*.txt
 /images
 .clang-format
 Makefile-1.save
 main.o
 hello
-hello.txt
+
